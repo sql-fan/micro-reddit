@@ -4,4 +4,5 @@ class User < ApplicationRecord
   validates :username, uniqueness: { message: "Username is already taken" }
 
   has_many :posts
+  has_many :comments
 end
